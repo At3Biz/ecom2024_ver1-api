@@ -19,7 +19,7 @@ app.use(cors());
 // }));
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://ecom2026-api-ten.vercel.app'],
+  origin: ['http://localhost:5173', 'https://ecom2024-ver1-api.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
