@@ -11,7 +11,15 @@ const categoryRoutes = require('./routes/category');
 // Middleware to log requests
 app.use(moregan('dev'));
 app.use(express.json({limit:'50mb'}));
-app.use(cors());
+// app.use(cors());
+
+
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true // Enable if you send cookies/auth tokens
+}));
+
+
 // app.use(cors({
 //   origin: 'http://localhost:3000', // Allow requests from this origin
 //   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
